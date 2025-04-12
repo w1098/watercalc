@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор Воды</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/logo.png" alt="logo">
+        </div>
+        <h1>WaterCalc -</h1>
+        <h2>Твой личный калькулятор воды</h2>
+    </header>
+    <main>
+        <p class="description">Добро пожаловать на сайт "WaterCalc" — ваш идеальный помощник в расчете необходимого количества питьевой воды!
+             Узнайте, сколько воды вам нужно для поддержания здоровья и энергии каждый день. </p>
+        <div class="container">
+            <div class="bottle">
+                <img class="bottles" src="src/water0.png">
+                
+                <p><span id="water">2</span>Л</p>
+            </div>
+            <div class="calc">
+                <div class="gender">
+                    <ul class="gen">
+                        <li id="man">Мужчина</li>
+                        <li id="woman">Женщина</li>
+                    </ul>
+                </div>
+                
+                <div class="slidecontainer">
+                    <p>Вес: <span id="weight"></span>КГ</p>
+                    <input type="range" min="20" max="150" value="20" class="slider" id="myWeight">
+                </div>
+                <div class="slidecontainer">
+                    <p>Длительность активности <span id="hours"></span>Ч</p>
+                    <input type="range" step="0.1" min="0.1" max="8" value="0.1" class="slider" id="myHours">
+                </div>
+                <div class="button">РАССЧИТАТЬ</div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
